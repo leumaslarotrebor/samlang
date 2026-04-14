@@ -1,0 +1,8 @@
+input x
+print "You entered:\n"
+print x
+
+if x > 100
+    print "High\n"
+else
+    print "Low\n"
