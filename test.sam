@@ -1,8 +1,41 @@
-input x
-print "You entered:\n"
-print x
+# SamLang — Feature Demo
+# Variables and arithmetic
+let x = 10
+let y = 3
+let result = x + y
+print "Sum: "
+print result
+print "\n"
 
-if x > 100
-    print "High\n"
-else
-    print "Low\n"
+# Conditionals
+if result > 10 {
+    print "Greater than 10\n"
+} else {
+    print "10 or less\n"
+}
+
+# Functions and recursion
+fun factorial(n) {
+    if n <= 1 {
+        return 1
+    }
+    return n * factorial(n - 1)
+}
+
+print "Factorial of 6: "
+print factorial(6)
+print "\n"
+
+# While loop
+let i = 1
+while i <= 5 {
+    print i
+    print "\n"
+    i = i + 1
+}
+
+# String operations
+let name = "SamLang"
+print "Hello from "
+print name
+print "\n"
